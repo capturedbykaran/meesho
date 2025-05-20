@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become supplier</title>
+    <style>
+        body {
+            background-color: #e7e0e0;
+            color: #121010;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #161212;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        form {
+            background-color: #c7b3b3;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #2c2c2c;
+            color: #f0f0f0;
+        }
+
+        input:focus {
+            outline: 2px solid #4e9eff;
+            background-color: #333;
+        }
+
+        button {
+            background-color: #4e9eff;
+            color: #ffffff;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #338be0;
+        }
+    </style>
+    
+
+</head>
+
+<body>
+    <div><h1 class="supplier-title">Become a Supplier</h1></div>
+    <form action="submit.csv" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="product">Product:</label>
+        <input type="text" id="product" name="product" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
